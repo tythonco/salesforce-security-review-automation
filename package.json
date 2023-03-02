@@ -1,0 +1,23 @@
+{
+  "name": "salesforce-security-review-automation",
+  "version": "1.0.0",
+  "description": "Salesforce Security Review Automation via Playwright",
+  "main": "index.js",
+  "scripts": {
+    "live-review": "HEADLESS=0 bash review.sh",
+    "report": "npx playwright show-report",
+    "review": "bash review.sh",
+    "start": "bash review.sh",
+    "test": "HEADLESS=0 bash review.sh"
+  },
+  "author": "Tython Co.",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "playwright": "^1.30.0",
+    "sfdx-node": "^3.8.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.30.0"
+  }
+}
